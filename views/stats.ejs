@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+    <div class="stats">
+        <h1>Most famous fox by votes</h1>
+        <% if (foxes && foxes.length> 0) { %>
+            <ol>
+                <% foxes.forEach(fox=> { %>
+                    <% if (fox.votes> 0) { %>
+
+                        <li>
+                            <img src="<%= fox.imageUrl %>">
+                            <span>Votes: <%= fox.votes %></span>
+                        </li>
+                        <% } %>
+                            <% }) %>
+            </ol>
+            <% } else { %>
+                <p>No voting data available.</p>
+                <% } %>
+    </div>
+
+    <%- include('partials/footer') %>

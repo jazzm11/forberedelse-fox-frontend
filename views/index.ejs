@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <h1>Welcome to the Fox App</h1>
+        <% if (fox) { %>
+            <form action="/vote" method="POST">
+
+                <!-- FOX 1 -->
+                <div class="fox-card">
+                    <img src="<%= fox.fox1 %>">
+                    <button class="vote-btn" type="submit" name="winnerUrl" value="<%= fox.fox1 %>">
+                        Vote
+                    </button>
+                </div>
+
+                <!-- FOX 2 -->
+                <div class="fox-card">
+                    <img src="<%= fox.fox2 %>">
+                    <button class="vote-btn" type="submit" name="winnerUrl" value="<%= fox.fox2 %>">
+                        Vote
+                    </button>
+                </div>
+
+                <!-- Always send both -->
+                <input type="hidden" name="fox1" value="<%= fox.fox1 %>">
+                <input type="hidden" name="fox2" value="<%= fox.fox2 %>">
+
+            </form>
+            <% } else { %>
+                <p>No foxes available for voting.</p>
+                <% } %>
+
+                    <%- include('partials/footer') %>
