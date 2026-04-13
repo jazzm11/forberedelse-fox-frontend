@@ -21,12 +21,58 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #222;
+}
+
+/* Logo */
+.logo {
+  color: orange;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #1a1a1a;
+  border-top: 1px solid #222;
+  color: #777;
+  font-size: 0.9rem;
+}
+
 /* ===== VOTING PAGE ===== */
 form {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 /* Fox card */
@@ -39,6 +85,21 @@ form div {
 form div:hover {
   background: #333;
   transform: scale(1.05);
+}
+
+.new-round-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: orange;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+}
+.new-round-btn:hover {
+  background: darkorange;
 }
 
 /* Images */
