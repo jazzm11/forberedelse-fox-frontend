@@ -13,6 +13,7 @@ This is the frontend part of the Fox Voting App using **EJS templates**.
 Route:
 
 GET /
+    
     /stats
 
 POST /vote
@@ -39,5 +40,3 @@ GET /stats
 - Minimal design
 
 ---
-
-## ⚙️ Requirements
